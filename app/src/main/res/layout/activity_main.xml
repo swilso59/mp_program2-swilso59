@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewEnterAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter The Bill Amount:"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bill Amount"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/textViewEnterTipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Tip Percentage:"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/editTextTipPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tip %"
+        android:inputType="number"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRoundBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Round Total Bill"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRoundTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Round Tip"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="total bill and tip result"
+        android:textSize="20sp" />
+
+</LinearLayout>
